@@ -9,8 +9,9 @@ const randomSquare = () => {
   squares.forEach((square) => {
     square.classList.remove('mole')
   })
-  let randomPos = squares[Math.floor(Math.random() * squares.length)]
-  console.log(randomPos)
+  let randomSquare = squares[Math.floor(Math.random() * squares.length)]
+  randomSquare.classList.add('mole')
+
 }
 
 randomSquare()
