@@ -41,6 +41,12 @@ moveMole()
 const countdown = () => {
   currentTime--
   timeLeft.innerHTML = currentTime
+
+  if (currentTime === 0) {
+    clearInterval(countdownTimerId)
+    alert(`Time has ran out! Your final score is ${result}`)
+  }
+
 }
 
 countdown()
