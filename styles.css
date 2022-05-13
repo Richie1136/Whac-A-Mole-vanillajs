@@ -1,0 +1,11 @@
+.grid {
+  width: 1800px;
+  height: 1800px;
+  display: flex;
+}
+
+.square {
+  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+}
