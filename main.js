@@ -14,4 +14,11 @@ const randomSquare = () => {
 
 }
 
-randomSquare()
+const moveMole = () => {
+  let timerID = null;
+  timerID = setInterval(() => {
+    randomSquare()
+  }, 500);
+}
+
+moveMole()
