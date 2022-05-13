@@ -5,6 +5,7 @@ let timeLeft = document.querySelector('#time-left')
 
 let result = 0
 let hitPosition;
+let currentTime = 60
 
 const randomSquare = () => {
   squares.forEach((square) => {
@@ -25,6 +26,8 @@ squares.forEach((square) => {
   })
 })
 
+
+
 const moveMole = () => {
   let timerID = null;
   timerID = setInterval(() => {
@@ -33,3 +36,15 @@ const moveMole = () => {
 }
 
 moveMole()
+
+
+const countdown = () => {
+  currentTime--
+  timeLeft.innerHTML = currentTime
+}
+
+countdown()
+
+let countdownTimerId = setInterval(() => {
+  countdown()
+}, 1000);
