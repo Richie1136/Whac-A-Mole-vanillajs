@@ -14,5 +14,7 @@
 
 .mole {
   background-image: url("./images/mole.png");
-  background-color: green;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
 }

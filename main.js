@@ -6,6 +6,7 @@ let timeLeft = document.querySelector('#time-left')
 let result = 0
 let hitPosition;
 let currentTime = 60
+let timerID = null;
 
 const randomSquare = () => {
   squares.forEach((square) => {
@@ -29,7 +30,6 @@ squares.forEach((square) => {
 
 
 const moveMole = () => {
-  let timerID = null;
   timerID = setInterval(() => {
     randomSquare()
   }, 500);
@@ -44,6 +44,7 @@ const countdown = () => {
 
   if (currentTime === 0) {
     clearInterval(countdownTimerId)
+    clearInterval(timerID)
     alert(`Time has ran out! Your final score is ${result}`)
   }
 
