@@ -18,3 +18,26 @@
   width: 200px;
   background-size: cover;
 }
+
+body {
+  background-color: black;
+}
+
+.container {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2#score {
+  margin-left: 20px;
+}
+
+.container h2 {
+  margin-left: 40px;
+}
+
+h2#time-left {
+  margin-left: 20px;
+}
